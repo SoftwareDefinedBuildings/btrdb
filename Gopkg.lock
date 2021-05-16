@@ -19,11 +19,17 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:fb010e5492b42a769e5305806dcb46ea3999a747cc955dace445ff6b7952a19a"
+  digest = "1:6a0610e8a334b6c63552e9b910886806f5707c38b6abf16ca2317e128813b494"
   name = "github.com/ceph/go-ceph"
-  packages = ["rados"]
+  packages = [
+    "internal/cutil",
+    "internal/errutil",
+    "internal/retry",
+    "internal/timespec",
+    "rados",
+  ]
   pruneopts = "UT"
-  revision = "b2d948844f193f694ddac05f1fd325e91dd2926c"
+  revision = "512d1edd8fcd101dfe3fc42bd17483fc710e56e4"
 
 [[projects]]
   branch = "master"
